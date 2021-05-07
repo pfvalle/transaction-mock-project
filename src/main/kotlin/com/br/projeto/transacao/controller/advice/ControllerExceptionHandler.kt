@@ -37,7 +37,7 @@ class ControllerExceptionHandler {
                     )
                 }
         )
-        logger.error("ExceptionHandler -> handleFileException -> ${e.message}")
+        logger.error("ExceptionHandler -> handleConstraintViolationException -> ${e.message}")
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error)
     }
 }
